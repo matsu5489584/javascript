@@ -26,7 +26,8 @@ while (i < animals.length) {
 
   alert(animals[i]);//ライオンの添字alert
   if (animal == 'ライオン' && animals[i] == 'ライオン' ) {
-      break;
+    alert(i); 
+     break;
   }
   i++; // 「i += 1」と書いても同じ
 }
