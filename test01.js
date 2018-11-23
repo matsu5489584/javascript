@@ -1,13 +1,17 @@
 //1.2.
-var i = prompt('数値を入れてください。');
-if ( i < 0 ){
+var input_number = prompt('数値を入れてください。');
+while (isNaN(input_number)) {
+    if (isNaN(input_number) ) {
+      alert("数値を入力してください！");
+      input_number = prompt('数値を入れてください。');
+    }
+}
+
+if ( input_number < 0 ){
   alert("負の数");
 }
-else if ( i > 0 ) {
+else if ( input_number > 0 ) {
   alert("正の数");
-}
-else {
-  alert("数値を入力してください！");
 }
 
 //3.
@@ -26,7 +30,7 @@ while (i < animals.length) {
 
   alert(animals[i]);//ライオンの添字alert
   if (animal == 'ライオン' && animals[i] == 'ライオン' ) {
-    alert(i); 
+    alert(i);
      break;
   }
   i++; // 「i += 1」と書いても同じ
