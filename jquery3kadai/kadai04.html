@@ -4,15 +4,20 @@
   <!-- デフォルトのテーマ  -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.4.3/flatpickr.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/kadai04.css">
 
 </head>
 <body>
   <h1>jQueryのデートピッカープラグイン</h1>
 
-
-  <input class="input" id="date_picker" type="text">
-
-
+  <div class="flatpickr input-group" data-id="strap">
+    <input type="text" placeholder="Select Date.." data-input>
+    <a class="input-button" title="button" data-toggle>
+      <i class="material-icons">calendar_today</i>
+    </a>
+  </div>
+  
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 

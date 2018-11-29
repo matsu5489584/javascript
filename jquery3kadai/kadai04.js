@@ -1,9 +1,9 @@
 (function($, window) {
   $(function() {
     // ここに処理を書きます
-    $('#date_picker').flatpickr({
+    $('.flatpickr').flatpickr({
       showOn: "both",
-      buttonText: "カレンダーを表示"
+      wrap: true
   });
     });
 })(jQuery, window);

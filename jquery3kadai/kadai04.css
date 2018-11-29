@@ -1,0 +1,47 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;  /* 推奨サイズ */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+
+  /* WebKitブラウザサポート */
+  -webkit-font-smoothing: antialiased;
+  /* Chrome、Safariサポート */
+  text-rendering: optimizeLegibility;
+
+  /* Firefoxサポート */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* IEサポート */
+  font-feature-settings: 'liga';
+}
+.input-group {
+    display: flex;
+    align-items: center;
+}
+.input-group input {
+    border: 1px solid #c3c3c3;
+    height: 36px;
+    line-height: 36px;
+    width: 80%;
+    padding: 4px;
+    max-width: 360px;
+    border-radius: 3px;
+    background: #fff;
+}
+a.input-button {
+    text-decoration: none;
+    border: 1px solid #bbb;
+    display: block;
+    padding: 8px;
+    border-left: 0;
+    cursor: pointer;
+    align-self: center;
+    justify-content: center;
+    line-height: 1;
+}
