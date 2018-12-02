@@ -1,6 +1,7 @@
 (function($, window) {
   $(function() {
-    $('#login').on('click', function(e) {
+    $('#login').on('click',checkEmail);
+     function checkEmail(e) {
       var email = $('#email').val(),
           password = $('#password').val();
       // alert(email);
@@ -17,6 +18,6 @@
       } else if (password.length < 6) {
         alert('パスワードは6文字以上です');
       }
-    });
+    };
   });
 })(jQuery, window);
